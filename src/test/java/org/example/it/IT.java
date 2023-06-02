@@ -5,8 +5,6 @@ import lombok.RequiredArgsConstructor;
 import org.example.App;
 import org.example.dto.ReadUserDto;
 import org.example.service.UserService;
-import jakarta.validation.ConstraintViolationException;
-import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -21,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest(classes = App.class)
 @RequiredArgsConstructor
 @TestConstructor(autowireMode = TestConstructor.AutowireMode.ALL)
-class UserServiceIT {
+class IT {
 
     private final UserService userService;
     private ReadUserDto readUserDto;
